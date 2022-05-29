@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.logo {
+    height: 48px;
+    width: auto;
+}
+
+#navbar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar .navbar-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#navbar .navbar-container ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+#navbar .navbar-container ul li {
+    padding: 0 20px;
+    transition: all 200ms ease;
+}
+
+#navbar .navbar-container ul li:hover {
+    color: #1db954;
+    cursor: pointer;
+}
+
+#navbar .navbar-container ul li:nth-child(3) {
+    border-right: 1px solid white;
+}
+
+#showcase {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: url(../Spotify/img/caramelo.jpg) center center/cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: color;
+    
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#showcase .showcase-container h2 {
+    font-size: 7.5rem;
+    text-align: center;
+    margin-top: 90px;
+}
+
+#showcase .showcase-container p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.botao {
+    background: #1db954;
+    color: white;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 200ms ease;
+}
+
+.botao:hover {
+    background: #1ed760;
+    cursor: pointer;
+}
+
+#footer {
+    background: black;
+    color: white;
+    padding: 70px 0;
+    justify-content: space-between;
+}
+
+#footer .footer-conteudo {
+    display: flex;
+    width:80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#footer .footer-conteudo .footer-menu {
+    margin: 0 3.75rem;
+    list-style: none;
+}
+
+#footer .footer-conteudo .footer-menu .footer-menu-itens {
+    margin: 20px 0;
+    font-size: 0.85rem;
+    transition: all 200ms ease;
+}
+
+#footer .footer-conteudo .footer-menu .footer-menu-itens:hover {
+    color: #1db954;
+    cursor: pointer;
+}
+
+#footer .footer-conteudo .footer-menu p {
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.75rem;
+}
+
+.sociais {
+    display: flex;
+}
+
+.sociais i {
+    margin: 0 25px;
+    font-size: 1.7rem;
+    transition: all 200ms ease;
+}
+
+.sociais i:hover {
+    color: #1db954;
+    cursor: pointer;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+    margin: auto;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.8rem;
+    padding-top: 50px;
+}
+
+.footer-info .info-menu {
+    display: flex;
+    list-style: none;
+}
+
+.footer-info .info-menu .info-menu-itens {
+    margin: 0 10px;
+    transition: all 200ms ease;
+}
+
+.footer-info .info-menu .info-menu-itens:hover {
+    color: #1db954;
+    cursor: pointer;
+}
+
+.footer-info .country .flag-brazil {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.footer-info .country .flag-brazil p{
+    transition: all 200ms ease;
+}
+
+.footer-info .country .flag-brazil p:hover {
+    color: #1db954;
+    cursor: pointer;
+}
+
+.footer-info .country .flag-brazil .bandeira {
+    height: 20px;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@media  screen and (max-width: 790px) {
+    #showcase .showcase-container h2 {
+        font-size: 5rem;
+    }
+    #showcase .showcase-container p {
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #footer .footer-conteudo {
+        justify-content: center;
+    }
+}
+
+@media  screen and (max-width: 570px) {
+    #navbar .navbar-container {
+        flex-direction: column;
+    }
+    #navbar .navbar-container ul {
+        justify-content: center;
+    }
+    #navbar .navbar-container ul li {
+        margin-top: 10px;
+    }
+    .footer-info .info-menu {
+        flex-direction: column;
+    }
+}
+
+@media  screen and (max-width: 370px) {
+    #navbar .navbar-container {
+        width: 100%;
+    }
+}
+
